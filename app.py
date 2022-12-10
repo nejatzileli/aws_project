@@ -6,7 +6,7 @@ import pickle
 import joblib
 
 
-data = joblib.load(r'C:\Users\nejat\PycharmProjects\pythonProject2\Miuulgross\sorted_rules_new2.pkl')
+data = joblib.load('sorted_rules_new2.pkl')
 
 def arl_recommender(rules_df, product_id , rec_count=1):
     sorted_rules = rules_df.sort_values("lift", ascending=False)
