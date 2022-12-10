@@ -6,7 +6,8 @@ import pickle
 import joblib
 
 
-data = pd.read_pickle('sorted_rules_new2.pkl')
+#data = pd.read_pickle('sorted_rules_new2.pkl')
+data = joblib.load('sorted_rules_new10.pkl')
 
 #data = pd.read_csv('yeni_08_sorted_rules.csv')
 
